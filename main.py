@@ -19,7 +19,7 @@ def handle_message(message):
         presence_penalty=0.0,
         stop=["You:"]
     )
-    bot.send_message(chat_id=message.from_user.id, text=response['choices'][0]['text'], parse_mode="Markdown")
+    bot.send_message(chat_id=message.from_user.id, text=response['choices'][0]['text'])
 
 
 bot.polling()
