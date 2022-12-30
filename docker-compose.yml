@@ -4,5 +4,6 @@ services:
   bot:
     container_name: tg_openai_bot
     build: ./
+    restart: always
     volumes:
       - ./logs/:/app/logs
